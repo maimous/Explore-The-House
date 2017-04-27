@@ -31,3 +31,10 @@ reference to the Location where the door leads (kitchen).
 ## 05 Add the OutsideWithDoor class
 * OutsideWithDoor inherits from Outside and implements IHasExteriorDoor.
 * The base class’s Description property fills in whether or not the location is hot. And that relies on the original Location class’s Description property to add the main description and exits.
+
+&nbsp;
+## 06 Add the RoomWithDoor class
+* The RoomWithDoor class inherits from Room and implements IHasExteriorDoor. It does everything 
+that the room does, but it adds a description of the exterior door to the constructor. It also adds
+DoorLocation, a reference to the location that the door leads to. DoorDescription and DoorLocation
+are required by IHasExteriorDoor.
