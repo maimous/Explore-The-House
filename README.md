@@ -16,3 +16,11 @@
 ## 02 Add the Room class
 * The Room class inherits from Location and adds a private field for the decoration. Its constructor sets the field.
 * The Room class will override and extend Description to add the decoration.
+
+&nbsp;
+## 03 Add the Outside class
+* Outside is a lot like Room — it inherits from Location, and adds a private field for the Hot property, which is used in the Description() method extended from the base class.
+* The Outside class will override and extend Description to add a comment if hot.
+
+&nbsp;
+## 04 Add the OutsideWithDoor class
