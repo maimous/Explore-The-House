@@ -23,4 +23,11 @@
 * The Outside class will override and extend Description to add a comment if hot.
 
 &nbsp;
-## 04 Add the OutsideWithDoor class
+## 04 Add the IHasExteriorDoor interface
+* There are two exterior doors in the house, the front door and the back door. Every location that has one (the front yard, back yard, living room, and kitchen) should implement IHasExteriorDoor. The DoorDescription read-only property contains a description of  the door (the front door is “an oak door with a brass knob,” and the back door is “a screen door”). The DoorLocation property contains a
+reference to the Location where the door leads (kitchen).
+
+&nbsp;
+## 05 Add the OutsideWithDoor class
+* OutsideWithDoor inherits from Outside and implements IHasExteriorDoor.
+* The base class’s Description property fills in whether or not the location is hot. And that relies on the original Location class’s Description property to add the main description and exits.
