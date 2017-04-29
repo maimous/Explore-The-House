@@ -42,3 +42,8 @@ are required by IHasExteriorDoor.
 &nbsp;
 ## 07 Add the form controls
 * Add a big multiline text box called description to show the description of the current room. A ComboBox called exits lists all of  the exits in the current room. It’s got two buttons: goHere moves to the room selected in the ComboBox, and goThroughTheDoor is only visible when there’s an exterior door.
+
+&nbsp;
+## 08 Add the house objects
+* In the form code, add the CreateObjects method. It instantiates the classes and passes the right information to each one’s constructor. The door description is passed to the OutsideWithDoor constructors. The Exits[] array for each instance is populated. For the IHasExteriorDoor objects,
+their door locations are being set.
