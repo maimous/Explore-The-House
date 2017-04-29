@@ -34,7 +34,11 @@ reference to the Location where the door leads (kitchen).
 
 &nbsp;
 ## 06 Add the RoomWithDoor class
-* The RoomWithDoor class inherits from Room and implements IHasExteriorDoor. It does everything 
+* The RoomWithDoor class inherits from Room and implements IHasExteriorDoor. It does everything
 that the room does, but it adds a description of the exterior door to the constructor. It also adds
 DoorLocation, a reference to the location that the door leads to. DoorDescription and DoorLocation
 are required by IHasExteriorDoor.
+
+&nbsp;
+## 07 Add the form controls
+* Add a big multiline text box called description to show the description of the current room. A ComboBox called exits lists all of  the exits in the current room. It’s got two buttons: goHere moves to the room selected in the ComboBox, and goThroughTheDoor is only visible when there’s an exterior door.
