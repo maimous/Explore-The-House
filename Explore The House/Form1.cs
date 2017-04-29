@@ -66,5 +66,10 @@ namespace Explore_The_House
             else
                 goThroughTheDoor.Visible = false;
         }
+
+        private void goHere_Click(object sender, EventArgs e)
+        {
+            MoveToANewLocation(currentLocation.Exits[exits.SelectedIndex]);
+        }
     }
 }

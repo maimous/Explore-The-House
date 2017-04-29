@@ -52,3 +52,7 @@ their door locations are being set.
 ## 09 Add the MoveToANewLocation method
 * The MoveToANewLocation() method displays a new location in the form. First we need to clear the combo box, and then we can add each of the locations’ names to it. Finally, we set its selected index (or which line is highlighted) to zero so it shows the first item in the list. The “Go through the door” button is set to invisible if the current location doesn’t implement IHasExteriorDoor.
 * Use the method to move to the living room as a starting point.
+
+&nbsp;
+## 10 Use MoveToANewLocation with goHere button
+* When the user clicks the “Go here:” button, it moves to the location selected in the combo box.

@@ -50,6 +50,7 @@
             this.goHere.TabIndex = 1;
             this.goHere.Text = "Go here:";
             this.goHere.UseVisualStyleBackColor = true;
+            this.goHere.Click += new System.EventHandler(this.goHere_Click);
             // 
             // exits
             // 
