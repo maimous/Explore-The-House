@@ -56,3 +56,8 @@ their door locations are being set.
 &nbsp;
 ## 10 Use MoveToANewLocation with goHere button
 * When the user clicks the “Go here:” button, it moves to the location selected in the combo box.
+
+&nbsp;
+## 11 Go through the outdoors
+* When the user clicks the “goThroughTheDoor” button, moves to the appropriate location.
+* We need to use the as keyword in order to downcast currentLocation to an IHasExteriorDoor so we can get access to the DoorLocation field.

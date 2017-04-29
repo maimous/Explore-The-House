@@ -71,5 +71,11 @@ namespace Explore_The_House
         {
             MoveToANewLocation(currentLocation.Exits[exits.SelectedIndex]);
         }
+
+        private void goThroughTheDoor_Click(object sender, EventArgs e)
+        {
+            IHasExteriorDoor hasDoor = currentLocation as IHasExteriorDoor;
+            MoveToANewLocation(hasDoor.DoorLocation);
+        }
     }
 }
