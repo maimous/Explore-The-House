@@ -47,3 +47,8 @@ are required by IHasExteriorDoor.
 ## 08 Add the house objects
 * In the form code, add the CreateObjects method. It instantiates the classes and passes the right information to each one’s constructor. The door description is passed to the OutsideWithDoor constructors. The Exits[] array for each instance is populated. For the IHasExteriorDoor objects,
 their door locations are being set.
+
+&nbsp;
+## 09 Add the MoveToANewLocation method
+* The MoveToANewLocation() method displays a new location in the form. First we need to clear the combo box, and then we can add each of the locations’ names to it. Finally, we set its selected index (or which line is highlighted) to zero so it shows the first item in the list. The “Go through the door” button is set to invisible if the current location doesn’t implement IHasExteriorDoor.
+* Use the method to move to the living room as a starting point.

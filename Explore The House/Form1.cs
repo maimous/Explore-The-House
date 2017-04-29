@@ -24,6 +24,7 @@ namespace Explore_The_House
         {
             InitializeComponent();
             CreateObjects();
+            MoveToANewLocation(livingRoom);
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -50,6 +51,20 @@ namespace Explore_The_House
             frontYard.DoorLocation = livingRoom;
             kitchen.DoorLocation = backYard;
             backYard.DoorLocation = kitchen;
+        }
+
+        private void MoveToANewLocation(Location newLocation)
+        {
+            currentLocation = newLocation;
+            exits.Items.Clear();
+            for (int i = 0; i < currentLocation.Exits.Length; i++)
+                exits.Items.Add(currentLocation.Exits[i].Name);
+            exits.SelectedIndex = 0;
+            description.Text = currentLocation.Description;
+            if (currentLocation is IHasExteriorDoor)
+                goThroughTheDoor.Visible = true;
+            else
+                goThroughTheDoor.Visible = false;
         }
     }
 }
